@@ -35,7 +35,6 @@ body{
     justify-content: space-between;
 }
 .smurf{
-    --box-shadow-color: green;
     border: 1px solid #eaeaea;
     background: #f7f7f7;
     font-family: sans-serif;
