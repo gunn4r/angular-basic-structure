@@ -17,10 +17,10 @@ html,body{
 
 @-webkit-keyframes colorPulseShadow{
   0% {box-shadow:10px 10px 0px #AA3939;}
-  25% {box-shadow:10px 10px 0px#AA6C39;;}
-  50% {box-shadow:10px 10px 0px#226666;}
-  75% {box-shadow:10px 10px 0px#2D882D;}
-  100% {box-shadow:10px 10px 0px#652770;}
+  25% {box-shadow:10px 10px 0px #AA6C39;;}
+  50% {box-shadow:10px 10px 0px #226666;}
+  75% {box-shadow:10px 10px 0px #2D882D;}
+  100% {box-shadow:10px 10px 0p x#652770;}
 }
 
 body{
