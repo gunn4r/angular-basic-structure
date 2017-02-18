@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Smurfs Yo</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>>
 </head>
 <body ng-controller="mainCtrl">
+    <div class="wrapper">
 
-    <div class="smurf" ng-repeat="smurf in smurfList">
-        <img src="http://www.placecage.com/300/300"/>
-        <div class="smurf-name">{{smurf.name}}</div>
-        <div class="smurf-meta">
-            <span class="smurf-id">{{smurf.id}}</div>
-            <span class="smurf-date">{{smurf.created | date}}</div>
+        <div class="smurf" ng-repeat="smurf in smurfList">
+            <img src="http://www.placecage.com/300/300"/>
+            <div class="smurf-meta">
+                <div class="smurf-name">{{smurf.name}}</div>
+                <span class="smurf-id">ID: {{smurf.id}}</span>
+                <span class="smurf-date">{{smurf.created | date}}</span>
+            </div>
         </div>
+        
     </div>
 
     <!--Scripts-->

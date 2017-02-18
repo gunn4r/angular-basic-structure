@@ -1,0 +1,68 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+
+@-webkit-keyframes colorPulseBG{
+  0% {background-color:#45CEEF;}
+  25% {background-color:#FFF5A5;}
+  50% {background-color:#FFD4DA;}
+  75% {background-color:#99D2E4;}
+  100% {background-color:#D8CAB4;}
+}
+
+@-webkit-keyframes colorPulseShadow{
+  0% {box-shadow:10px 10px 0px #AA3939;}
+  25% {box-shadow:10px 10px 0px#AA6C39;;}
+  50% {box-shadow:10px 10px 0px#226666;}
+  75% {box-shadow:10px 10px 0px#2D882D;}
+  100% {box-shadow:10px 10px 0px#652770;}
+}
+
+body{
+    -webkit-animation: colorPulseBG 40s infinite alternate;
+}
+
+.wrapper{
+    width:60%;
+    margin: 40px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.smurf{
+    --box-shadow-color: green;
+    border: 1px solid #eaeaea;
+    background: #f7f7f7;
+    font-family: sans-serif;
+    margin-bottom:30px;
+    -webkit-animation: colorPulseShadow 20s infinite alternate;
+
+}
+
+.smurf-meta{
+    padding:10px;
+}
+
+.smurf-name {
+    font-size: 30px;
+    text-transform:uppercase;
+    font-weight: bold;
+    text-align:center;
+    margin-bottom:5px;
+}
+
+.smurf-id, .smurf-date {
+    color: #8d8d8d;
+    width:49%;
+    display:inline-block;
+
+}
+
+.smurf-date{
+    text-align: right;
+}
